@@ -8,12 +8,7 @@ strong {
 }
 
 /* task: 2 */
-p {
-    background-color: antiquewhite0;
-    font-size: 24pt;
-}
-
-ul {
+p, ul {
     background-color: green;
     font-size: 24pt;
 }
@@ -29,7 +24,7 @@ ul {
 
 /* task: 4 */
 a:hover {
-    background-color: silver;
+    background-color: lightblue;
 }
 
 /* task: 5 */
