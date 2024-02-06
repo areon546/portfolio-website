@@ -1,0 +1,13 @@
+html{background-color: gray;
+margin: 3rem;}
+
+
+header{background-color: darkblue;}
+
+header p{background-color: blue;}
+
+a{
+    color: white;
+}
+
+figcaption {color: gray;}
