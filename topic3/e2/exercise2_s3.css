@@ -1,4 +1,15 @@
-body {
-    background: white;
-    color: black;
+@media print {
+
+  /* task: 2 */
+  p,
+  ul {
+    background-color: green;
+    font-size: 24pt;
   }
+
+  /* task: 3 */
+  #cool,
+  .shiny {
+    background-color: silver;
+  }
+}

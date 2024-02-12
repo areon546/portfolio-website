@@ -14,17 +14,14 @@ p, ul {
 }
 
 /* task: 3 */
-#cool {
-    background-color: darkblue;
+#cool, .shiny {
+    background-color: silver;
 }
 
-.shiny {
-    background-color: blue;
-}
 
 /* task: 4 */
 a:hover {
-    background-color: lightblue;
+    background-color: silver;
 }
 
 /* task: 5 */
