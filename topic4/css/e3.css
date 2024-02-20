@@ -1,0 +1,55 @@
+caption {
+    background-color: pink;
+    font-weight: bold;
+    padding: 0.1REM;
+    text-align: center;
+    color: black;
+}
+
+table {
+    border: solid .1px black;
+    border-collapse: separate;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.01REM;
+    align-self: center;
+    margin: 0 auto;
+    width: 20%;
+}
+
+td,
+th {
+    color: slategray;
+    border: solid 1px lightgray;
+}
+
+tfoot,
+thead th {
+    background-color: lightpink;
+}
+
+img {
+    width: 10REM;
+    border-radius: 1REM;
+}
+
+td {
+    text-align: center;
+    width: auto;
+}
+
+tbody td:hover {
+    background-color: pink;
+    border: solid 1px gray;
+}
+
+.leftAlign {
+    text-align: left;
+}
+.rightAlign {
+    text-align: right;
+}
+
+td:hover.lightgray {
+    background-color: white;
+    border: solid 1px lightgray;
+}
