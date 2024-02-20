@@ -2,6 +2,8 @@ br {
     background-color: black;
 }
 
+
+/* body stylings */ 
 body {
     background-color: gray;
     margin: 1rem;
@@ -12,6 +14,13 @@ header {
     background-color: darkblue;
 }
 
+
+main {
+    background-color: white;
+}
+
+
+/* link stylings */
 header nav {
     background-color: rgb(0, 76, 139);
     padding: 0.5REM;
@@ -24,12 +33,8 @@ a {
 
 li a {color: gray;}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+ /* heading stylings */
+h1, h2, h3, h4, h5, h6 {
     text-decoration: underline;
 }
 
@@ -45,6 +50,7 @@ h3 {
     border-top: solid 1REM white;
 }
 
+/* image stylings */
 figure {
     padding: 0;
 }
@@ -56,8 +62,4 @@ img {
 
 figcaption {
     color: gray;
-}
-
-main {
-    background-color: white;
 }
