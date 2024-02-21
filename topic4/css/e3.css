@@ -49,7 +49,12 @@ tbody td:hover {
     text-align: right;
 }
 
+.lightgray {
+    background-color: lightgray;
+    border: solid 1px lightgray;
+}
+
 td:hover.lightgray {
-    background-color: white;
+    background-color: lightgray;
     border: solid 1px lightgray;
 }
