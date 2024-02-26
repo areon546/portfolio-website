@@ -1,0 +1,11 @@
+h1 {
+  display: none
+}
+
+body {
+  background: rgb(2, 99, 47);
+}
+
+#tablet h1 {
+  display: block;
+}

@@ -1,0 +1,11 @@
+h1 {
+  display: none
+}
+
+body {
+  background: rgb(142, 93, 1);
+}
+
+#landscape h1 {
+  display: block;
+}

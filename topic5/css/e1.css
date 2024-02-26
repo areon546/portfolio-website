@@ -1,0 +1,78 @@
+
+/* article styling */
+article {
+    background-color: gray;
+    margin: .5REM;
+}
+
+/* image styling */
+img {
+    width: 30%;
+}
+
+section {
+    position: relative;
+}
+
+img.overlayed {
+    width: auto;
+
+    position: absolute;
+    top: 5px;   
+    left: 40px;
+}
+
+figcaption {
+    background-color: black;
+    color: aliceblue;
+    width: 30%;
+
+    opacity: 75%;
+
+    position: relative;
+    top: -23px;
+}
+
+
+div,.description{
+
+    position: absolute;
+    top: 0px;
+    left: 30%;
+}
+
+
+div,
+figure {
+    margin-left: 2.5REM;
+}
+
+/* footer styling */
+footer,
+footer a {
+    background-color: black;
+    color: antiquewhite;
+}
+
+footer hr {
+    background-color: green;
+}
+
+footer a:hover {
+    background-color: green;
+}
+
+footer section {
+    border-top: 1px solid green;
+    text-wrap: wrap;
+
+    flex-grow: 2;
+    /* gap: 15%; */
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* align-content: center; */
+}

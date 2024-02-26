@@ -1,0 +1,11 @@
+h1 {
+  display: none
+}
+
+body {
+  background: rgb(185, 137, 5);
+}
+
+#normal h1 {
+  display: block;
+}
