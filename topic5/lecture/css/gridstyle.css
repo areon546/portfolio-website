@@ -1,0 +1,15 @@
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 2.5fr 5fr 2.5fr;
+  grid-template-rows: auto;
+  gap: 0.7rem;
+}
+
+.item,
+header,
+footer {
+  background-color: rgb(245, 245, 245);
+  border: solid 1px;
+
+}

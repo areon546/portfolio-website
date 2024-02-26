@@ -1,0 +1,30 @@
+/* task: 1 */
+div {
+    background-color: silver;
+}
+
+strong {
+    font-size: 24pt;
+}
+
+/* task: 2 */
+p, ul {
+    background-color: green;
+    font-size: 24pt;
+}
+
+/* task: 3 */
+#cool, .shiny {
+    background-color: silver;
+}
+
+
+/* task: 4 */
+a:hover {
+    background-color: silver;
+}
+
+/* task: 5 */
+ul a {
+    color: orange;
+}

@@ -1,0 +1,15 @@
+
+@import "exercise2_s2.css";
+
+/* rules */
+
+/* task: 4 */
+a:hover {
+    background-color: gray;
+}
+
+/* task: 5 */
+ul a {
+    color: orange;
+}
+

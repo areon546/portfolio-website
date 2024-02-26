@@ -1,0 +1,11 @@
+h1 {
+  display: none
+}
+
+body {
+  background: rgb(61, 25, 159);
+}
+
+#wide h1 {
+  display: block;
+}

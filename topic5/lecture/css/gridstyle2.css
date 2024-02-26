@@ -1,0 +1,42 @@
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'links cake_reviews other_content'
+    'footer footer footer';
+  gap: 0.7rem;
+}
+
+.item,
+header,
+footer {
+  background-color: rgb(245, 245, 245);
+  border: solid 1px;
+
+}
+
+header {
+  grid-area: header;
+  padding: 0.5rem;
+}
+
+#links {
+  grid-area: links;
+  padding: 0.5rem;
+}
+
+#cake_reviews {
+  grid-area: cake_reviews;
+  padding: 0.5rem;
+}
+
+#other_content {
+  grid-area: other_content;
+  padding: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+  padding: 0.5rem;
+}

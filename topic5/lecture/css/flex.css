@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items: start;
+}
+
+
+.item {
+  border: solid 1px black;
+  border-radius: 10%;
+}

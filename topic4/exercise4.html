@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/e4.css">
+</head>
+
+<body>
+
+
+    <form action="https://drusmannaeem.co.uk/process.php" method="post">
+        <fieldset>
+            <legend>Shirt Order Form</legend>
+
+
+            <fieldset>
+                <!-- shirt size -->
+                <label for="shirtSize">Shirt Size:</label>
+                <br>
+                <select name="shirtSize" id="shirtSize" required>
+                    <option value="">Choose shirt size</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <br>
+
+
+                <!-- shirt sleeve -->
+                <label for="shirt sleeve">Choose a shirt sleeve:</label>
+                <br>
+
+                <input type="radio" name="shirt sleeve" id="shortSleeve" value="short" required checked>
+                <label for="shortSleeve">Short</label>
+                <br>
+                <input type="radio" name="shirt sleeve" id="longSleeve" value="long" required>
+                <label for="longSleeve">Long</label>
+                <br>
+
+
+                <!-- sleeve colour -->
+                <label for="sleeveColour">Sleeve Colour:</label>
+                <input type="color" name="sleeveColour" id="sleeveColour" required>
+                <br>
+
+
+                <!-- quantity -->
+                <label for="shirtQuantity">Quantity:</label>
+                <input type="number" name="shirtQuantity" id="shirtQuantity" min="1" max="10" required>
+                <br>
+
+                <!-- date of request -->
+                <label for="requestDate">Today's Date:</label>
+                <input type="date" name="date" id="requestDate" required>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <!-- user into: name, email, telephone, -->
+
+                <label for="userName">Name:</label>
+                <br>
+                <input type="text" name="name" id="userName" required>
+                <br>
+                <label for="userEmail">Email:</label>
+                <br>
+                <input type="email" name="email" id="userEmail" required>
+                <br>
+
+                <label for="userTelNum">Telephone Number:</label>
+                <br>
+                <input type="tel" name="tel" id="userTelNum" required pattern="^(?:0|\+?44)(?:\d\s?){9,10}$">Example: +44 xxx xxx xxx or xxx xxx xxxx
+                <br>
+
+
+            </fieldset>
+
+
+            <fieldset>
+                <!-- address, city, postcode -->
+
+                <label for="userAddress">Address: </label>
+                <br>
+                <input type="text" name="address" id="userAddress" required>
+                <br>
+
+                <label for="City">City: </label>
+                <br>
+                <input list="userCity" name="City" id="City" required>
+                <datalist id="userCity">
+                    <option value="London">London</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Montreal">Montreal</option>
+                    <option value="Brasilia">Brasilia</option>
+                </datalist>
+                <br>
+
+                <label for="userPostcode">PostCode:</label>
+                <br>
+                <input type="text" name="userPostcode" id="userPostcode" required>
+                <br>
+
+
+            </fieldset>
+
+            Keep me informed about future shirt designs:
+            <input type="checkbox" name="acceptTerms" id="">
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>

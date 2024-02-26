@@ -1,0 +1,27 @@
+form {
+    padding-left: 15REM;
+    padding-right: 15REM;
+}
+
+fieldset fieldset {
+    border: solid 1px green;
+    align-self: center;
+}
+
+
+fieldset {
+    border: solid 1px black;
+    background-color: lightgreen;
+    align-self: center;
+}
+
+
+legend {
+    background-color: green;
+    font-weight: bold;
+    padding: 0.1REM;
+    text-align: center;
+    color: black;
+    padding-left: 15REM;
+    padding-right: 15REM;
+}
