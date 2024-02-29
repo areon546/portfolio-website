@@ -13,61 +13,77 @@
 
 <body>
 
+    <header id="header" class="header">
 
-    <header>
+        <nav class="headerLinks">
+            <a href="">Artur Baran</a>
 
-        <a href="">Artur Baran</a>
-
-        <ul>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Education</a></li>
-            <li><a href="">Skills</a></li>
-        </ul>
+            <ul>
+                <li><a href="">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-    <main>
+    <ul id="links" class="links">
+        <li><a href="">CV</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Hobbies</a></li>
+        <li><a href="">Links</a></li>
+    </ul>
 
+    <section id="interests" class="interests">
         <h1>Research Interest</h1>
 
         <ul>
             <li>Maths</li>
             <li>Computer Science</li>
         </ul>
+        <!-- <p>Maths</p>
+        <p>Computer Science</p> -->
+    </section>
 
-
-        <h2>Top 3 Skills</h2>
-
-        <ul>
-            <li>
-                <img src="images/first.png" alt="" class="overlayed" />Java
-            </li>
-            <li>
-                <img src="images/second.png" alt="" class="overlayed" />HTML
-            </li>
-            <li>
-                <img src="images/third.png" alt="" class="overlayed" />CSS
-            </li>
-        </ul>
-
-
-        <h1>Education</h1>
+    <section id="skills" class="item">
+        <h3>Top 3 Skills</h3>
 
         <ul>
-            <li>2023-Present: MSci Computer Science  Queen Mary University of London</li>
+            <li>
+                <img src="images/first.png" alt="" class="overlayed" />
+                <aside>Java</aside>
+            </li>
+            <li>
+                <img src="images/second.png" alt="" class="overlayed" />
+                <aside>HTML</aside>
+            </li>
+            <li>
+                <img src="images/third.png" alt="" class="overlayed" />
+                <aside>CSS</aside>
+            </li>
         </ul>
+    </section>
 
+    <section id="aboutMe" class="item">
+        <p>I am a Computer Science student currently in university learning about computers and doing archery.
+        </p>
 
         <figure>
             <img src="images/picture.jpg" alt="image of me" title="An image of me" width="250">
-            <figcaption>Artur Baran</figcaption>
         </figure>
 
-        <article id="aboutMe">
-            <h3>About Me</h3>
-            <p>I am a Computer Science student currently in university learning about computers and doing archery. </p>
-        </article>
+    </section>
 
+
+    <section id="education" class="item">
+        <h1>Education:</h1>
+
+        <ul>
+            <li>2023-Present: MSci Computer Science Queen Mary University of London</li>
+        </ul>
+    </section>
+
+    <section id="hobbies" class="item">
         <h3>Hobbies</h3>
 
         <ul>
@@ -75,11 +91,10 @@
             <li>Reaching</li>
             <li>Writing</li>
         </ul>
+    </section>
 
-    </main>
 
-
-    <footer>
+    <footer id="footer" class="footer">
         <p>&copy; 2024 Artur Baran</p>
     </footer>
 </body>

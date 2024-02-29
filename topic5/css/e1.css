@@ -5,17 +5,29 @@ article {
     margin: .5REM;
 }
 
+article section {
+    position: relative;
+}
+
+div,.description{
+
+    position: absolute;
+    top: 0px;
+    left: 30%;
+}
+
+div,
+figure {
+    margin-left: 2.5REM;
+}
+
 /* image styling */
 img {
     width: 30%;
 }
 
-section {
-    position: relative;
-}
-
 img.overlayed {
-    width: auto;
+    width: 3%;
 
     position: absolute;
     top: 5px;   
@@ -34,45 +46,32 @@ figcaption {
 }
 
 
-div,.description{
-
-    position: absolute;
-    top: 0px;
-    left: 30%;
-}
-
-
-div,
-figure {
-    margin-left: 2.5REM;
-}
-
 /* footer styling */
-footer,
-footer a {
+footer {
     background-color: black;
     color: antiquewhite;
-}
 
-footer hr {
-    background-color: green;
-}
-
-footer a:hover {
-    background-color: green;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* align-content: center; */
 }
 
 footer section {
-    border-top: 1px solid green;
     text-wrap: wrap;
 
     flex-grow: 2;
     /* gap: 15%; */
 }
 
-footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    /* align-content: center; */
+
+footer a {
+    background-color: green;
+    color: white;
 }
+
+footer a:hover {
+    background-color: green;
+}
+
+
