@@ -1,0 +1,20 @@
+body {
+    background-color: gray;
+}
+
+fieldset {
+    border: solid 1px black;
+    background-color: aquamarine;
+    color: black;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* height: fit-content; */
+}
+
+legend {
+    border: solid 1px black;
+    background-color: aquamarine;
+    color: black;
+}

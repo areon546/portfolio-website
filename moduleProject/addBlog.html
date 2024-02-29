@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Blog</title>
+    <link rel="stylesheet" href="css/addBlog.css">
+</head>
+
+<body>
+
+    <form action="php/addPost.php" method="post">
+        <fieldset>
+            <legend>Add Blog:</legend>
+
+            <!-- User Name -->
+            <label for="blogTitle">Title:</label>
+            <input type="text" name="title" id="blogTitle" placeholder="New title">
+            <br>
+
+            <!-- Password -->
+            <label for="blog">Blog Text:</label>
+            <br>
+            <textarea name="blogPost" id="blog" placeholder="This is the start of my blog" rows="10"
+                cols="50">TE</textarea>
+
+            <br>
+            <input type="submit" value="Submit Blog">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
