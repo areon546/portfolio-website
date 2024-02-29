@@ -1,18 +1,18 @@
 /* grid template styling */
-
 body {
     display: grid;
-    grid-template-columns: 1ft 1ft 1ft 1ft 1ft;
-    /* repeat(5, 1fr)*/
-    grid-template-rows: repeat(4, auto);
+    /* grid-template-rows: repeat(4, auto); */
     grid-template-areas:
         'header header header header header'
         'interests aboutMe aboutMe aboutMe hobbies'
-        'links aboutMe aboutMe aboutMe hobbies'
-        'skills educat educat educat hobbies'
+        'links aboutMe aboutMe aboutMe movies'
+        'skills educat educat educat educat'
     ;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: lightcyan;
 }
 
+/* header flexbox style rules */
 header {
     grid-area: header;
     background-color: green;
@@ -21,7 +21,7 @@ header {
 
 header nav {
     display: flex;
-    direction: row;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -30,26 +30,46 @@ header nav a {
     align-self: center;
 }
 
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0.1REM;
+    align-items: center;
+}
+
+/* footer styling */
 footer {
     background-color: green;
     color: white;
     margin: 0.2rem;
 }
 
-/* header flexbox style rules */
-header nav ul {
-    display: flex;
-    direction: row;
+
+/* list styling */
+ul {
     list-style-type: none;
-    padding: 0.1REM;
+    padding: .8REM;
+    margin: 0;
 }
-
-
 
 /* grid formating */
 .item {
+    margin: .2rem;
+    padding: .4REM;
+    background-color: lavender;
+}
+
+.item div {
+    border: solid 1px lavender;
     background-color: aliceblue;
-    margin: 0.2rem;
+}
+
+.interests h1,
+.item h1,
+.item h2,
+.item h3 {
+    padding-left: 0.3REM;
 }
 
 header a {
@@ -68,31 +88,58 @@ h3 {
 
 .interests {
     background-color: wheat;
-    margin: 0.2rem;
+    margin: 0.2REM;
+
+    font-family: "Quicksand", sans-serif;
 }
 
 .links {
     margin: 0.2rem;
-    margin: solid 1px gray;
-    background-color: lightgray;
+    background-color: mintcream;
+    border: solid 1px lightgray;
 }
 
-.links,
+.educat {
+    margin: .2rem;
+    padding: .4REM;
+}
+
 a {
     text-decoration: none;
     color: darkgreen;
     size: 110%;
 }
 
-/* list formating */
-/* 
-ul li {
-    list-style-type: none;
-    list-style-position: outside;
-} */
+/* about me styling */
+#aboutMe {
+    grid-area: aboutMe;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
 
-/* ids for grid */
+#aboutMe p {
+    width: auto;
+    padding: 0.4REM;
+}
+
+figure img {
+    max-width: 15REM;
+}
+
+/* skills styling */
+#skills ul {
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+/* ids for body grid */
 #interest {
     grid-area: interests;
 }
@@ -105,14 +152,14 @@ ul li {
     grid-area: skills;
 }
 
-#aboutMe {
-    grid-area: aboutMe;
-}
-
 #education {
     grid-area: educat;
 }
 
 #hobbies {
     grid-area: hobbies;
+}
+
+#movies {
+    grid-area: movies;
 }

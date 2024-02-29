@@ -8,6 +8,12 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/e2.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width:768px)">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -15,7 +21,7 @@
 
     <header id="header" class="header">
 
-        <nav class="headerLinks">
+        <nav>
             <a href="">Artur Baran</a>
 
             <ul>
@@ -37,45 +43,47 @@
     <section id="interests" class="interests">
         <h1>Research Interest</h1>
 
+
         <ul>
             <li>Maths</li>
             <li>Computer Science</li>
         </ul>
-        <!-- <p>Maths</p>
-        <p>Computer Science</p> -->
     </section>
 
     <section id="skills" class="item">
-        <h3>Top 3 Skills</h3>
+        <div>
+            <h3>Top 3 Skills</h3>
 
-        <ul>
-            <li>
-                <img src="images/first.png" alt="" class="overlayed" />
-                <aside>Java</aside>
-            </li>
-            <li>
-                <img src="images/second.png" alt="" class="overlayed" />
-                <aside>HTML</aside>
-            </li>
-            <li>
-                <img src="images/third.png" alt="" class="overlayed" />
-                <aside>CSS</aside>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <img src="images/first.png" alt="" class="overlayed" />
+                    <aside>Java</aside>
+                </li>
+                <li>
+                    <img src="images/second.png" alt="" class="overlayed" />
+                    <aside>HTML</aside>
+                </li>
+                <li>
+                    <img src="images/third.png" alt="" class="overlayed" />
+                    <aside>CSS</aside>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="aboutMe" class="item">
-        <p>I am a Computer Science student currently in university learning about computers and doing archery.
+    <section id="aboutMe" class="aboutMe">
+        <p>I am a Computer Science student currently in Queen Mary Univeristy of London learning about computers and
+            doing archery. It's been exciting so far, learning about Automata, HTML and CSS, Object Oriented
+            Programming, as well as other stuff.
         </p>
 
         <figure>
-            <img src="images/picture.jpg" alt="image of me" title="An image of me" width="250">
+            <img src="images/picture.jpg" alt="image of me" title="An image of me">
         </figure>
-
     </section>
 
 
-    <section id="education" class="item">
+    <section id="education" class="educat">
         <h1>Education:</h1>
 
         <ul>
@@ -84,13 +92,28 @@
     </section>
 
     <section id="hobbies" class="item">
-        <h3>Hobbies</h3>
+        <div>
+            <h3>Hobbies</h3>
 
-        <ul>
-            <li>Archery</li>
-            <li>Reaching</li>
-            <li>Writing</li>
-        </ul>
+            <ul>
+                <li>Archery</li>
+                <li>Reaching</li>
+                <li>Writing</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="movies" class="item">
+        <div>
+            <h3>Good Movies</h3>
+
+            <ul>
+                <li>Redline</li>
+                <li>Fight Club</li>
+                <li>Wall-E</li>
+                <li>The Grand Budapest Hotel</li>
+            </ul>
+        </div>
     </section>
 
 
