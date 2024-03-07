@@ -1,0 +1,35 @@
+fieldset, legend {
+    border: solid 1px black;
+    background-color: aquamarine;
+    color: black;
+}
+
+fieldset {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /* height: fit-content; */
+}
+
+legend.align-left {
+    /* margin-left: auto; */
+    margin-right: auto;
+}
+
+
+legend.align-centre {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+legend.align-right {
+    margin-left: auto;
+    /* margin-right: auto; */
+}
+
+
+fieldset.scale-large{
+    scale: 1.5;
+}

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Blog</title>
-    <link rel="stylesheet" href="css/addBlog.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <form action="php/addPost.php" method="post">
         <fieldset>
-            <legend>Add Blog:</legend>
+            <legend class="align-left">Add Blog:</legend>
 
             <!-- Blog Title -->
             <label for="blogTitle">Title:</label>
@@ -30,7 +31,7 @@
             <label for="content">Blog Text:</label>
             <br>
             <textarea name="blogPost" id="content" placeholder="This is the start of my blog" rows="10"
-                cols="50">TE</textarea>
+                cols="50"></textarea>
             <br>
 
 
@@ -40,8 +41,8 @@
             <br>
             <br>
 
-            <input type="submit" value="Submit Blog">
-            <input type="reset" value="Reset">
+            <input type="submit" value="Post" class="button">
+            <input type="reset" value="Clear" class="button">
         </fieldset>
     </form>
 
