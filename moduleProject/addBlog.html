@@ -14,18 +14,32 @@
         <fieldset>
             <legend>Add Blog:</legend>
 
-            <!-- User Name -->
+            <!-- Blog Title -->
             <label for="blogTitle">Title:</label>
             <input type="text" name="title" id="blogTitle" placeholder="New title">
             <br>
 
-            <!-- Password -->
-            <label for="blog">Blog Text:</label>
+            <input type="radio" name="blogType" id="portfolioBlog" value="portflio" required checked>
+            <label for="portfolioBlog">Portfolio</label>
             <br>
-            <textarea name="blogPost" id="blog" placeholder="This is the start of my blog" rows="10"
-                cols="50">TE</textarea>
+            <input type="radio" name="blogType" id="blogBlog" value="blog" required>
+            <label for="blogBlog">Blog</label>
+            <br>
 
+            <!-- Blog Text -->
+            <label for="content">Blog Text:</label>
             <br>
+            <textarea name="blogPost" id="content" placeholder="This is the start of my blog" rows="10"
+                cols="50">TE</textarea>
+            <br>
+
+
+            <label for="myFile">Upload Images:</label>
+            <br>
+            <input type="file" id="myFile" name="filename">
+            <br>
+            <br>
+
             <input type="submit" value="Submit Blog">
             <input type="reset" value="Reset">
         </fieldset>

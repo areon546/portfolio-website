@@ -1,0 +1,51 @@
+/* header flexbox style rules */
+header {
+    grid-area: header;
+    background-color: green;
+    margin-left: 0.2REM;
+    margin-right: 0.2REM;
+    margin-bottom: 0.2REM;
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav a {
+    padding: 1REM;
+    align-self: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0.1REM;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+/* body styling */
+body {
+    background-color: lightcyan;
+}
+
+/* footer styling */
+footer {
+    background-color: green;
+    color: white;
+    margin: 0.2rem;
+}

@@ -1,0 +1,33 @@
+/* adjust main grid */
+body {
+    grid-template-areas:
+        'header'
+        'aboutMe'
+        'educat'
+        'links'
+        'interests'
+        'skills'
+        'hobbies'
+        'movies'
+        'footer'
+    ;
+    grid-template-rows: repeat(9, auto);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+/* adjust flex boxes */
+header nav, header nav ul {
+    flex-direction: column;
+    /* list-style-type: none; */
+    padding: 0.1REM;
+    /* align-items: center; */
+}
+
+#aboutMe {
+    flex-direction: column-reverse;
+    justify-content: start;
+}
+
+footer {
+    grid-area: footer;
+}
