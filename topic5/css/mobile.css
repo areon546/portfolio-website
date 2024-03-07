@@ -16,12 +16,7 @@ body {
 }
 
 /* adjust flex boxes */
-header nav {
-    flex-direction: column;
-    /* justify-content: space-between; */
-}
-
-header nav ul {
+header nav, header nav ul {
     flex-direction: column;
     /* list-style-type: none; */
     padding: 0.1REM;
