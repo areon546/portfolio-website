@@ -1,6 +1,5 @@
 /* header flexbox style rules */
 header {
-    grid-area: header;
     background-color: green;
     margin-left: 0.2REM;
     margin-right: 0.2REM;
@@ -30,17 +29,46 @@ header nav ul {
 
 header a {
     color: white;
+}
+
+a {
     text-decoration: none;
 }
 
-header a:hover {
-    color: lightgray;
+a:hover {
     text-decoration: underline;
 }
 
 /* body styling */
 body {
     background-color: lightcyan;
+    margin-top: 1.5REM;
+    margin-left: 12REM;
+    margin-right: 12REM;
+}
+
+.links {
+    margin: 0.2rem;
+    background-color: mintcream;
+    border: solid 1px lightgray;
+}
+
+.links a {
+    color: darkgreen;
+    size: 110%;
+}
+
+figure img {
+    max-width: 15REM;
+}
+
+/* article styling */ 
+
+article {
+    border: 1px solid lightgray;
+    margin: 0.3rem;
+    padding-left: 30px;
+    padding-top: 15px;
 }
 
 /* footer styling */

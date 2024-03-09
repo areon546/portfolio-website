@@ -1,14 +1,32 @@
-/* grid template styling */
-body {
+/* grid styling */
+section#capabilities {
     display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-        'header header header header header'
-        'contactMe aboutMe aboutMe aboutMe aboutMe'
-        'links aboutMe aboutMe aboutMe aboutMe'
-        'skills educat educat educat educat'
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "educ educ"
+    "skils proj"
     ;
-    grid-template-columns: repeat(5, 1fr); 
+    gap: 0.2REM;
+}
+
+section#education {
+    grid-area: educ;
+}
+
+section#skills {
+    grid-area: skils;
+}
+
+section#projects {
+    grid-area: proj;
+}
+
+
+section#capabilities {
+    margin: 0.2REM;
+    padding: 0.4REM;
+    background-color: lavenderblush;
 }
 
 /* list styling */
@@ -19,21 +37,33 @@ ul {
 }
 
 /* grid formating */
-.item {
+ul.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2REM;
+}
+
+ul.projectGrid a {
+    color: darkgreen;
+    padding: 0.4REM;
+    margin: 0.2REM;
+    background-color: mintcream;
+    border: solid 1px lightgray;
+}
+
+
+#skills,
+#projects,
+#education {
     margin: .2rem;
     padding: .4REM;
     background-color: lavender;
 }
 
-.item div {
-    border: solid 1px lavender;
-    background-color: aliceblue;
-}
 
-.contactMe h1,
-.item h1,
-.item h2,
-.item h3 {
+h1,
+h2,
+h3 {
     padding-left: 0.3REM;
 }
 
@@ -41,33 +71,23 @@ h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
+h2 {}
+
 h3 {
     background-color: green;
     color: white;
 }
 
-.contactMe {
+#contactMe {
     background-color: wheat;
     margin: 0.2REM;
 
     font-family: "Quicksand", sans-serif;
 }
 
-.links {
-    margin: 0.2rem;
-    background-color: mintcream;
-    border: solid 1px lightgray;
-}
-
-.educat {
+#education {
     margin: .2rem;
     padding: .4REM;
-}
-
-a {
-    text-decoration: none;
-    color: darkgreen;
-    size: 110%;
 }
 
 /* about me styling */
@@ -84,42 +104,17 @@ a {
     padding: 0.4REM;
 }
 
-figure img {
-    max-width: 15REM;
-}
-
 /* skills styling */
 #skills ul {
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 }
 
 #skills ul li {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-}
-
-/* ids for body grid */
-#contactMe {
-    grid-area: contactMe;
-}
-
-#links {
-    grid-area: links;
-}
-
-#skills {
-    grid-area: skills;
-}
-
-#education {
-    grid-area: educat;
-}
-
-#hobbies {
-    grid-area: hobbies;
-}
-
-#movies {
-    grid-area: movies;
+    padding: 0.4REM;
+    margin: 0.2REM;
 }
