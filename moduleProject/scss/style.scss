@@ -1,0 +1,88 @@
+/* variables */
+$pageMargin: 12REM;
+$contentMargin: 3REM;
+$defaultColor: green;
+$defaultDark: darkgreen;
+$spaceAroundContent: 0.25REM;
+
+/* header flexbox style rules */
+header {
+    background-color: $defaultColor;
+    margin-left: $spaceAroundContent;
+    margin-right: $spaceAroundContent;
+    margin-bottom: $spaceAroundContent;
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav a {
+    padding: 1REM;
+    align-self: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0.1REM;
+    align-items: center;
+}
+
+header a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* body styling */
+body {
+    background-color: lightcyan;
+    margin-top: 1.5REM;
+    margin-left: $pageMargin;
+    margin-right: $pageMargin;
+}
+
+.links {
+    margin: 0.2rem;
+    background-color: mintcream;
+    border: solid 1px lightgray;
+}
+
+.links a {
+    color: $defaultDark;
+    size: 110%;
+}
+
+figure img {
+    max-width: 15REM;
+}
+
+/* article styling */ 
+
+article {
+    border: 1px solid lightgray;
+    margin: $spaceAroundContent;
+    padding-left: $contentMargin;
+    padding-right: $contentMargin;
+    padding-top: 15px;
+    
+}
+
+/* footer styling */
+footer {
+    background-color: $defaultColor;
+    color: white;
+    margin: $spaceAroundContent;
+}
