@@ -1,0 +1,27 @@
+table,
+th,
+td, caption {
+    border: 1px solid gray;
+    margin: auto;
+}
+
+caption,
+tfoot {
+    background-color: orange;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    text-align: center;
+    background-color: lightgray;
+}
+
+tfoot td {
+    background-color: orange;
+    text-align: center;
+    color: black;
+}
