@@ -11,7 +11,7 @@
             "savePath": null,
             "savePathReplacementPairs": {
                 "/scss": "/css"
-            }
+            },
         },
         // {
         //     "format": "compressed",
@@ -22,7 +22,12 @@
         //     },
         //     "generateMap": false
         // }
-    ]
+    ],
 
+    "liveSassCompile.settings.excludeList": [
+        "/**/node_modules/**",
+        "/.vscode/**",
+        "/*/scss/variables.scss"        
+    ]
 
 }
