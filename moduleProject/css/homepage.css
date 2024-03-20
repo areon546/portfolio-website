@@ -1,120 +1,90 @@
-/* grid styling */
-section#capabilities {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "educ educ"
-    "skils proj"
-    ;
-    gap: 0.2REM;
-}
-
-section#education {
-    grid-area: educ;
-}
-
-section#skills {
-    grid-area: skils;
-}
-
-section#projects {
-    grid-area: proj;
-}
-
-
-section#capabilities {
-    margin: 0.2REM;
-    padding: 0.4REM;
-    background-color: lavenderblush;
-}
-
+/* variables */
 /* list styling */
 ul {
-    list-style-type: none;
-    padding: .8REM;
-    margin: 0;
+  list-style-type: none;
+  padding: 0.8REM;
+  margin: 0;
 }
-
-/* grid formating */
 ul.projectGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.2REM;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25REM;
+}
+ul.projectGridli, ul.projectGrid a {
+  color: darkgreen;
+  padding: 0.45REM;
+  margin: 0.25REM;
+  background-color: mintcream;
+  border: solid 1px lightgray;
+}
+ul.eduList li a {
+  color: darkblue;
 }
 
-ul.projectGrid a {
-    color: darkgreen;
-    padding: 0.4REM;
-    margin: 0.2REM;
-    background-color: mintcream;
-    border: solid 1px lightgray;
-}
-
-
-#skills,
-#projects,
-#education {
-    margin: .2rem;
-    padding: .4REM;
-    background-color: lavender;
-}
-
-
-h1,
-h2,
-h3 {
-    padding-left: 0.3REM;
+.item {
+  margin: 0.25REM;
+  padding: 0.45REM;
+  background-color: lavender;
 }
 
 h1 {
-    font-family: 'Courier New', Courier, monospace;
+  background-color: green;
+  color: white;
 }
 
-h2 {}
-
-h3 {
-    background-color: green;
-    color: white;
+h2 {
+  margin: 0.25REM;
+  padding: 0.45REM;
 }
 
-#contactMe {
-    background-color: wheat;
-    margin: 0.2REM;
-
-    font-family: "Quicksand", sans-serif;
+/* styling */
+section {
+  /* about me styling */
 }
-
-#education {
-    margin: .2rem;
-    padding: .4REM;
+section#education {
+  grid-area: educ;
+  margin: 0.25REM;
+  padding: 0.45REM;
 }
-
-/* about me styling */
-#aboutMe {
-    grid-area: aboutMe;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+section#skills {
+  grid-area: skils;
 }
-
-#aboutMe p {
-    width: auto;
-    padding: 0.4REM;
+section#skills ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-wrap: wrap;
 }
-
-/* skills styling */
-#skills ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    flex-wrap: wrap;
+section#skills ul li {
+  padding: 0.45REM;
+  margin: 0.25REM;
 }
-
-#skills ul li {
-    padding: 0.4REM;
-    margin: 0.2REM;
+section#projects {
+  grid-area: proj;
 }
+section#capabilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "educ educ" "skils proj";
+  gap: 0.25REM;
+  margin: 0.25REM;
+  padding: 0.45REM;
+  background-color: lavenderblush;
+}
+section#contactMe {
+  background-color: wheat;
+  margin: 0.25REM;
+  font-family: "Quicksand", sans-serif;
+}
+section#aboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+section#aboutMe p {
+  width: auto;
+  padding: 0.45REM;
+}/*# sourceMappingURL=homepage.css.map */

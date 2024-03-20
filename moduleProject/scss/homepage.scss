@@ -1,0 +1,112 @@
+@use 'variables' as *;
+
+/* list styling */
+ul {
+    list-style-type: none;
+    padding: $VERYbigSpaceAroundContent;
+    margin: 0;
+
+    &.projectGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $spaceAroundContent;
+
+        &li, a {
+            color: darkgreen;
+            padding: $bigSpaceAroundContent;
+            margin: $spaceAroundContent;
+            background-color: mintcream;
+            border: solid 1px lightgray;
+        }
+
+    }
+
+    &.eduList li a {
+        color: darkblue;
+    }
+
+}
+
+.item {
+    margin: $spaceAroundContent;
+    padding: $bigSpaceAroundContent;
+    background-color: lavender;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    margin: $spaceAroundContent;
+    padding: $bigSpaceAroundContent;
+}
+
+/* styling */
+section {
+    &#education {
+        grid-area: educ;
+
+        margin: $spaceAroundContent;
+        padding: $bigSpaceAroundContent;
+    }
+
+    &#skills {
+        grid-area: skils;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            flex-wrap: wrap;
+
+            li {
+                padding: $bigSpaceAroundContent;
+                margin: $spaceAroundContent;
+            }
+        }
+    }
+
+    &#projects {
+        grid-area: proj;
+    }
+
+    &#capabilities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "educ educ"
+            "skils proj"
+        ;
+        gap: $spaceAroundContent;
+        margin: $spaceAroundContent;
+        padding: $bigSpaceAroundContent;
+        background-color: lavenderblush;
+    }
+
+    &#contactMe {
+        background-color: wheat;
+        margin: $spaceAroundContent;
+
+        font-family: "Quicksand", sans-serif;
+    }
+
+    /* about me styling */
+    &#aboutMe {
+        // grid-area: aboutMe;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+
+        p {
+            width: auto;
+            padding: $bigSpaceAroundContent;
+        }
+    }
+
+}

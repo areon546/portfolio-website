@@ -14,22 +14,17 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
 }
-
 header nav a {
   padding: 1REM;
   align-self: center;
+  color: white;
 }
-
 header nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   padding: 0.1REM;
   align-items: center;
-}
-
-header a {
-  color: white;
 }
 
 a {
@@ -70,6 +65,10 @@ article {
   padding-left: 3REM;
   padding-right: 3REM;
   padding-top: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-left: 0.25REM;
 }
 
 /* footer styling */

@@ -1,13 +1,8 @@
-/* variables */
-$pageMargin: 12REM;
-$contentMargin: 3REM;
-$defaultColor: green;
-$defaultDark: darkgreen;
-$spaceAroundContent: 0.25REM;
+@use "variables" as *;
 
 /* header flexbox style rules */
 header {
-    background-color: $defaultColor;
+    background-color: $colour1;
     margin-left: $spaceAroundContent;
     margin-right: $spaceAroundContent;
     margin-bottom: $spaceAroundContent;
@@ -15,27 +10,27 @@ header {
     top: 0;
 }
 
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-header nav a {
-    padding: 1REM;
-    align-self: center;
-}
+header {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-header nav ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 0.1REM;
-    align-items: center;
-}
+        a {
+            padding: 1REM;
+            align-self: center;
+            color: white;
+        }
 
-header a {
-    color: white;
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0.1REM;
+            align-items: center;
+        }
+    }
 }
 
 a {
@@ -61,7 +56,7 @@ body {
 }
 
 .links a {
-    color: $defaultDark;
+    color: $colour1Dark;
     size: 110%;
 }
 
@@ -69,7 +64,7 @@ figure img {
     max-width: 15REM;
 }
 
-/* article styling */ 
+/* article styling */
 
 article {
     border: 1px solid lightgray;
@@ -77,12 +72,15 @@ article {
     padding-left: $contentMargin;
     padding-right: $contentMargin;
     padding-top: 15px;
-    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-left: $spaceAroundContent;
 }
 
 /* footer styling */
 footer {
-    background-color: $defaultColor;
+    background-color: $colour1;
     color: white;
     margin: $spaceAroundContent;
 }

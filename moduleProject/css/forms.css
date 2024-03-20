@@ -1,35 +1,31 @@
+/* variables */
 fieldset, legend {
-    border: solid 1px black;
-    background-color: aquamarine;
-    color: black;
+  border: solid 1px black;
+  background-color: aquamarine;
+  color: black;
 }
 
-fieldset {
-    margin-top: 15vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    /* height: fit-content; */
+fieldset, h1 {
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* height: fit-content; */
+}
+fieldset.scale-large, h1.scale-large {
+  scale: 1.5;
 }
 
 legend.align-left {
-    /* margin-left: auto; */
-    margin-right: auto;
+  /* margin-left: auto; */
+  margin-right: auto;
 }
-
-
 legend.align-centre {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
 legend.align-right {
-    margin-left: auto;
-    /* margin-right: auto; */
-}
-
-
-fieldset.scale-large{
-    scale: 1.5;
-}
+  margin-left: auto;
+  /* margin-right: auto; */
+}/*# sourceMappingURL=forms.css.map */
