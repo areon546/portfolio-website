@@ -1,4 +1,13 @@
 /* variables */
+header {
+  background-color: red;
+  margin-left: 0.25REM;
+  margin-right: 0.25REM;
+  margin-bottom: 0.25REM;
+  position: sticky;
+  top: 0;
+}
+
 fieldset, legend {
   border: solid 1px black;
   background-color: aquamarine;

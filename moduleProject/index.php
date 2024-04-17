@@ -20,16 +20,8 @@
 
 <body>
 
-    <header class="header"> <!-- <?php include('header.php'); ?> -->
-        <nav>
-            <a href="index.html" id="indexLink">Artur Baran</a>
+    <?php include ('templates/header.php'); ?>
 
-            <ul>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
 
     <nav class="links">
         <ul>
@@ -114,9 +106,7 @@
         </ul>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 Artur Baran</p>
-    </footer>
+    <?php include ("templates/footer.html"); ?>
 </body>
 
 </html>

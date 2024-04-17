@@ -1,0 +1,29 @@
+/* variables */
+@media (max-width: 768px) {
+  body {
+    margin-left: 1REM;
+    margin-right: 1REM;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding: 0.1REM;
+    padding-bottom: 0.4REM;
+  }
+}
+@media (max-width: 768px) {
+  /* adjust grid */
+  /* adjust flex boxes */
+  #aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  section#capabilities {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .links ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=homepageMobile.css.map */

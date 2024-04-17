@@ -7,16 +7,25 @@
     <title>Login Page</title>
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
 </head>
 
 <body>
+
+    <header class="header2">
+        <nav>
+            <a href="index.html">Artur Baran</a>
+        </nav>
+    </header>
 
     <form action="php/login.php" method="post">
         <fieldset class="scale-large">
             <legend class="align-centre">Login:</legend>
 
             <!-- User Name -->
-            <input type="email" name="email" id="userEmail" placeholder="Email">
+            <!-- <input type="email" name="email" id="userEmail" placeholder="Email"> -->
+            <input type="text" name="email" id="userEmail" placeholder="Email"> <!-- test string -->
             <br>
 
             <!-- Password -->

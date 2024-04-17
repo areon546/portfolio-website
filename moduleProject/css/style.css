@@ -8,7 +8,6 @@ header {
   position: sticky;
   top: 0;
 }
-
 header nav {
   display: flex;
   flex-direction: row;
@@ -30,7 +29,6 @@ header nav ul {
 a {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: underline;
 }
@@ -48,7 +46,10 @@ body {
   background-color: mintcream;
   border: solid 1px lightgray;
 }
-
+.links ul {
+  display: flex;
+  flex-direction: column;
+}
 .links a {
   color: darkgreen;
   size: 110%;
@@ -58,16 +59,19 @@ figure img {
   max-width: 15REM;
 }
 
-/* article styling */
 article {
-  border: 1px solid lightgray;
   margin: 0.25REM;
   padding-left: 3REM;
   padding-right: 3REM;
   padding-top: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding-left: 0.25REM;
 }
 

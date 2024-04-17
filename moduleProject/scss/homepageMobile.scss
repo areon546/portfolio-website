@@ -1,0 +1,28 @@
+@forward "mobile";
+
+@media (max-width:768px) {
+
+    /* adjust grid */
+    /* adjust flex boxes */
+
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+        // background-color: red;
+
+        justify-content: start;
+    }
+
+    section {
+        &#capabilities {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+    }
+
+    .links ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

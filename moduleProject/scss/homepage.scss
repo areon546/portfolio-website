@@ -11,7 +11,8 @@ ul {
         grid-template-columns: repeat(3, 1fr);
         gap: $spaceAroundContent;
 
-        &li, a {
+        &li,
+        a {
             color: darkgreen;
             padding: $bigSpaceAroundContent;
             margin: $spaceAroundContent;
@@ -94,6 +95,9 @@ section {
 
         font-family: "Quicksand", sans-serif;
     }
+}
+
+article {
 
     /* about me styling */
     &#aboutMe {

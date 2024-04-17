@@ -10,7 +10,8 @@ ul.projectGrid {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.25REM;
 }
-ul.projectGridli, ul.projectGrid a {
+ul.projectGridli,
+ul.projectGrid a {
   color: darkgreen;
   padding: 0.45REM;
   margin: 0.25REM;
@@ -38,9 +39,6 @@ h2 {
 }
 
 /* styling */
-section {
-  /* about me styling */
-}
 section#education {
   grid-area: educ;
   margin: 0.25REM;
@@ -79,12 +77,16 @@ section#contactMe {
   margin: 0.25REM;
   font-family: "Quicksand", sans-serif;
 }
-section#aboutMe {
+
+article {
+  /* about me styling */
+}
+article#aboutMe {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-section#aboutMe p {
+article#aboutMe p {
   width: auto;
   padding: 0.45REM;
 }/*# sourceMappingURL=homepage.css.map */

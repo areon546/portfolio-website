@@ -1,4 +1,5 @@
 @use "variables" as *;
+// @forward "forms";
 
 /* header flexbox style rules */
 header {
@@ -8,10 +9,7 @@ header {
     margin-bottom: $spaceAroundContent;
     position: sticky;
     top: 0;
-}
 
-
-header {
     nav {
         display: flex;
         flex-direction: row;
@@ -31,14 +29,15 @@ header {
             align-items: center;
         }
     }
+
 }
 
 a {
     text-decoration: none;
-}
 
-a:hover {
+    &:hover {
     text-decoration: underline;
+}
 }
 
 /* body styling */
@@ -53,28 +52,36 @@ body {
     margin: 0.2rem;
     background-color: mintcream;
     border: solid 1px lightgray;
-}
 
-.links a {
-    color: $colour1Dark;
-    size: 110%;
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        color: $colour1Dark;
+        size: 110%;
+    }
 }
 
 figure img {
     max-width: 15REM;
 }
 
-/* article styling */
-
+// article styling 
 article {
-    border: 1px solid lightgray;
     margin: $spaceAroundContent;
     padding-left: $contentMargin;
     padding-right: $contentMargin;
     padding-top: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding-left: $spaceAroundContent;
 }
 

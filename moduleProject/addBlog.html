@@ -7,6 +7,9 @@
     <title>Add Blog</title>
     <link rel="stylesheet" href="css/forms.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/addPost.js" defer></script>
+    
 </head>
 
 <body>
@@ -16,7 +19,7 @@
             <legend class="align-left">Add Blog:</legend>
 
             <!-- Blog Title -->
-            <label for="blogTitle">Title:</label>
+            <label for="blogTitle" id="titleLabel">Title:</label>
             <input type="text" name="title" id="blogTitle" placeholder="New title">
             <br>
 
@@ -28,7 +31,7 @@
             <br>
 
             <!-- Blog Text -->
-            <label for="content">Blog Text:</label>
+            <label for="content" id="textLabel">Blog Text:</label>
             <br>
             <textarea name="blogPost" id="content" placeholder="This is the start of my blog" rows="10"
                 cols="50"></textarea>
@@ -40,8 +43,8 @@
             <br>
             <br>
 
-            <input type="submit" value="Post" class="button">
-            <input type="reset" value="Clear" class="button">
+            <input type="submit" value="Post" class="button" id="submit">
+            <input type="reset" value="Clear" class="button" id="clear">
         </fieldset>
     </form>
 

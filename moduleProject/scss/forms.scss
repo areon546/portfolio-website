@@ -1,5 +1,14 @@
 @use "variables" as *;
 
+header {
+    background-color: red;
+    margin-left: $spaceAroundContent;
+    margin-right: $spaceAroundContent;
+    margin-bottom: $spaceAroundContent;
+    position: sticky;
+    top: 0;
+}
+
 fieldset, legend {
     border: solid 1px black;
     background-color: $defaultBackgroundColour;
@@ -37,4 +46,5 @@ legend {
         /* margin-right: auto; */
     }
 }
+
 

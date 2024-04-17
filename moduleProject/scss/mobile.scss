@@ -1,0 +1,25 @@
+@use 'variables' as *;
+
+@media (max-width:768px) {
+
+    // reset margins
+    body {
+        margin-left: 1REM;
+        margin-right: 1REM;
+    }
+
+
+    header {
+        // position: static;
+
+        nav {
+            ul {
+                flex-direction: column;
+                padding: 0.1REM;
+                padding-bottom: .4REM;
+                // align-items: center;
+            }
+        }
+    }
+
+}
