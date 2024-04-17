@@ -1,0 +1,19 @@
+body {
+    background-color: orange;
+    text-align: center;
+}
+
+form {
+    background-color: aliceblue;
+    display: inline-block;
+    border-radius: 1REM;
+    width: 15REM;
+
+    padding: 0.8REM;
+    margin-top: 5REM;
+}
+
+#submitBlue{
+    background-color: blue;
+    color: aliceblue;
+}
