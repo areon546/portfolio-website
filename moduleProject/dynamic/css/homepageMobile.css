@@ -1,0 +1,48 @@
+/* variables */
+@media (max-width: 768px) {
+  body {
+    margin-left: 1REM;
+    margin-right: 1REM;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column-reverse;
+    padding: 0.1REM;
+    padding-bottom: 0.4REM;
+  }
+}
+@media (max-width: 768px) {
+  /* adjust grid */
+  /* adjust flex boxes */
+  article#aboutMe ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  article#aboutMe img {
+    max-width: 30vw;
+  }
+  section#capabilities {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .links ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+ul.projectGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25REM;
+}
+ul.projectGridli,
+ul.projectGrid a {
+  color: darkgreen;
+  padding: 0.45REM;
+  margin: 0.25REM;
+  background-color: mintcream;
+  border: solid 1px lightgray;
+}/*# sourceMappingURL=homepageMobile.css.map */

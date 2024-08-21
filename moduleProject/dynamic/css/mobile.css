@@ -1,0 +1,15 @@
+/* variables */
+@media (max-width: 768px) {
+  body {
+    margin-left: 1REM;
+    margin-right: 1REM;
+  }
+  header nav {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column-reverse;
+    padding: 0.1REM;
+    padding-bottom: 0.4REM;
+  }
+}/*# sourceMappingURL=mobile.css.map */

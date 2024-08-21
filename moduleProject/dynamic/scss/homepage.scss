@@ -1,0 +1,98 @@
+@use 'variables' as *;
+
+
+.item {
+    margin: $spaceAroundContent;
+    padding: $bigSpaceAroundContent;
+    background-color: lavender;
+}
+
+h1 {
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    margin: $spaceAroundContent;
+    padding: $bigSpaceAroundContent;
+}
+
+/* styling */
+section {
+    &#education {
+        grid-area: educ;
+
+        margin: $spaceAroundContent;
+        padding: $bigSpaceAroundContent;
+    }
+
+    &#skills {
+        grid-area: skils;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li {
+                padding: $bigSpaceAroundContent;
+                margin: $spaceAroundContent;
+            }
+        }
+    }
+
+    &#projects {
+        grid-area: proj;
+    }
+
+    &#capabilities {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "educ educ"
+            "skils proj"
+        ;
+        gap: $spaceAroundContent;
+        margin: $spaceAroundContent;
+        padding: $bigSpaceAroundContent;
+        background-color: lavenderblush;
+    }
+
+    &#contactMe {
+        background-color: wheat;
+        margin: $spaceAroundContent;
+
+        font-family: "Quicksand", sans-serif;
+    }
+}
+
+article {
+    margin: $spaceAroundContent;
+    padding-left: $contentMargin;
+    padding-right: $contentMargin;
+    padding-top: 15px;
+    border: 1px solid gray;
+
+    /* about me styling */
+    &#aboutMe {
+        // grid-area: aboutMe;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+
+        p {
+            width: auto;
+            padding: $bigSpaceAroundContent;
+        }
+    }
+
+}
+
+aside#welcomeMessage {
+    border: 3px solid black;
+    color: black;
+}

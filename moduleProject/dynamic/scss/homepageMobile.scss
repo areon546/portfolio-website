@@ -1,0 +1,53 @@
+@use "variables" as *;
+@forward "mobile";
+
+@media (max-width:768px) {
+
+    /* adjust grid */
+    /* adjust flex boxes */
+
+    article#aboutMe {
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        img {
+            max-width: 30vw;
+
+        }
+    }
+
+    section {
+        &#capabilities {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+    }
+
+    .links ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+ul {
+    &.projectGrid {
+        display: flex;
+        flex-direction: column;
+        gap: $spaceAroundContent;
+
+        &li,
+        a {
+            color: darkgreen;
+            padding: $bigSpaceAroundContent;
+            margin: $spaceAroundContent;
+            background-color: mintcream;
+            border: solid 1px lightgray;
+        }
+
+    }
+}

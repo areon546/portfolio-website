@@ -1,0 +1,78 @@
+/* variables */
+.item {
+  margin: 0.25REM;
+  padding: 0.45REM;
+  background-color: lavender;
+}
+
+h1 {
+  background-color: green;
+  color: white;
+}
+
+h2 {
+  margin: 0.25REM;
+  padding: 0.45REM;
+}
+
+/* styling */
+section#education {
+  grid-area: educ;
+  margin: 0.25REM;
+  padding: 0.45REM;
+}
+section#skills {
+  grid-area: skils;
+}
+section#skills ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section#skills ul li {
+  padding: 0.45REM;
+  margin: 0.25REM;
+}
+section#projects {
+  grid-area: proj;
+}
+section#capabilities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "educ educ" "skils proj";
+  gap: 0.25REM;
+  margin: 0.25REM;
+  padding: 0.45REM;
+  background-color: lavenderblush;
+}
+section#contactMe {
+  background-color: wheat;
+  margin: 0.25REM;
+  font-family: "Quicksand", sans-serif;
+}
+
+article {
+  margin: 0.25REM;
+  padding-left: 3REM;
+  padding-right: 3REM;
+  padding-top: 15px;
+  border: 1px solid gray;
+  /* about me styling */
+}
+article#aboutMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+article#aboutMe p {
+  width: auto;
+  padding: 0.45REM;
+}
+
+aside#welcomeMessage {
+  border: 3px solid black;
+  color: black;
+}/*# sourceMappingURL=homepage.css.map */

@@ -1,0 +1,123 @@
+@use "variables" as *;
+// @forward "forms";
+
+/* header flexbox style rules */
+header {
+    background-color: $colour1;
+    margin-left: $spaceAroundContent;
+    margin-right: $spaceAroundContent;
+    margin-bottom: $spaceAroundContent;
+    position: sticky;
+    top: 0;
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+            padding: 1REM;
+            align-self: center;
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0.1REM;
+            align-items: center;
+        }
+    }
+
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+    text-decoration: underline;
+}
+}
+
+/* body styling */
+body {
+    background-color: lightcyan;
+    margin-top: 1.5REM;
+    margin-left: $pageMargin;
+    margin-right: $pageMargin;
+}
+
+.links {
+    margin: 0.2rem;
+    background-color: mintcream;
+    border: solid 1px lightgray;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    a {
+        color: $colour1Dark;
+        size: 110%;
+    }
+}
+
+figure img {
+    max-width: 15REM;
+}
+
+// article styling 
+article {
+    margin: $spaceAroundContent;
+    padding-left: $contentMargin;
+    padding-right: $contentMargin;
+    padding-top: 15px;
+    border: 1px solid gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-left: $spaceAroundContent;
+}
+
+/* footer styling */
+footer {
+    background-color: $colour1;
+    color: white;
+    margin: $spaceAroundContent;
+}
+
+
+/* list styling */
+ul {
+    list-style-type: none;
+    padding: $VERYbigSpaceAroundContent;
+    margin: 0;
+
+    &.projectGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $spaceAroundContent;
+
+        &li,
+        a {
+            color: darkgreen;
+            padding: $bigSpaceAroundContent;
+            margin: $spaceAroundContent;
+            background-color: mintcream;
+            border: solid 1px lightgray;
+        }
+
+    }
+
+    &.eduList li a {
+        color: darkblue;
+    }
+
+}

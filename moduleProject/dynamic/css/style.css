@@ -1,0 +1,107 @@
+/* variables */
+/* header flexbox style rules */
+header {
+  background-color: green;
+  margin-left: 0.25REM;
+  margin-right: 0.25REM;
+  margin-bottom: 0.25REM;
+  position: sticky;
+  top: 0;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav a {
+  padding: 1REM;
+  align-self: center;
+  color: white;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0.1REM;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* body styling */
+body {
+  background-color: lightcyan;
+  margin-top: 1.5REM;
+  margin-left: 12REM;
+  margin-right: 12REM;
+}
+
+.links {
+  margin: 0.2rem;
+  background-color: mintcream;
+  border: solid 1px lightgray;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+}
+.links a {
+  color: darkgreen;
+  size: 110%;
+}
+
+figure img {
+  max-width: 15REM;
+}
+
+article {
+  margin: 0.25REM;
+  padding-left: 3REM;
+  padding-right: 3REM;
+  padding-top: 15px;
+  border: 1px solid gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-left: 0.25REM;
+}
+
+/* footer styling */
+footer {
+  background-color: green;
+  color: white;
+  margin: 0.25REM;
+}
+
+/* list styling */
+ul {
+  list-style-type: none;
+  padding: 0.8REM;
+  margin: 0;
+}
+ul.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25REM;
+}
+ul.projectGridli,
+ul.projectGrid a {
+  color: darkgreen;
+  padding: 0.45REM;
+  margin: 0.25REM;
+  background-color: mintcream;
+  border: solid 1px lightgray;
+}
+ul.eduList li a {
+  color: darkblue;
+}/*# sourceMappingURL=style.css.map */
